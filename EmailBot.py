@@ -11,28 +11,29 @@ print("Loading...")
 print()
 time.sleep(3)
 
-print("Please enter your email adress.")
+print("Please enter your email address.")
 email_user = str(input())
 print()
 
-print("Please enter your email password")
+print("Please enter your email account password")
 email_password = str(input())
 print()
 
-print("Please enter your recepients email adress.")
+print("Please enter your recepients email address.")
 email_send = str(input())
 
 print("Please enter the subject of your email.")
-subject = "Testing"
+subject = str(input())
 
-text = input()
+print("Please type out the body of your email.")
+text = str(input())
 
 #Starts MIMEMultipart email by declaring msg object.
 msg = MIMEMultipart()
 msg['From'] = email_user
 msg["To"] = email_send
 msg['Subject'] = subject
-body = 'This is a test smtplib python automated email.'
+body = text
 
 #Attaches From, To, Subject and Body
 msg.attach(MIMEText(body, 'plain'))
