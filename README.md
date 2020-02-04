@@ -1,4 +1,4 @@
-# sandbox
+# Python Email Bot
 Python Email Bot
 Fully functional SMTP Lib Email Bot.
 Warning! Can spam inboxes.
